@@ -1,0 +1,4 @@
+{
+  "status": "blocked",
+  "reason": "Playwright Chromium executable not installed; no desktop/mobile/offline browser assertions executed"
+}

@@ -1,0 +1,53 @@
+--- a/index.html
++++ b/index.html
+@@ -8,7 +8,7 @@
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <meta name="apple-mobile-web-app-title" content="GPS Power Lab">
+ <link rel="manifest" href="./manifest.webmanifest">
+-<title>GPS Power Lab</title>
++<title>GPS Power Lab · v13.1 E03</title>
+ <style>
+ :root{
+   --bg:#07111d;--panel:#0d1927;--panel2:#101f30;--card:#122437;
+@@ -1918,7 +1918,7 @@
+     soc:parseDE($("soc").value),
+     model:getModel()
+   };
+-  if(!Number.isFinite(p.wind))p.wind=0;
++  if(state.uiMode!=="pro"||$("wind").value.trim()==="")p.wind=0;
+   if(!Number.isFinite(p.vehicleMass)||p.vehicleMass<250||p.vehicleMass>4500)throw new Error("Gewicht prüfen.");
+   if(!Number.isFinite(p.totalMass)||p.totalMass<300||p.totalMass>5000)throw new Error("Gesamtgewicht prüfen.");
+   if(!Number.isFinite(p.driver)||p.driver<0||p.driver>350)throw new Error("Fahrergewicht prüfen.");
+@@ -2004,10 +2004,13 @@
+   var rows=[],peak=-Infinity,peakIndex=-1;
+ 
+   entries.forEach(function(e,i){
++    if(!Number.isFinite(e.time)||e.time<=0||!Number.isFinite(e.start)||e.start<0)throw new Error("Intervallgeschwindigkeit und Zeit prüfen.");
+     var v=(e.start+5)/3.6,a=(10/3.6)/e.time;
+-    var vAir=Math.max(0,v+(p.wind||0)/3.6);
++    // Reverse airflow needs a different aerodynamic model; do not silently clamp it.
++    if(e.start+(p.wind||0)<=0)throw new Error("Rückenwind erreicht Fahrgeschwindigkeit: Aerodynamikmodell nicht anwendbar.");
++    var vAir=v+(p.wind||0)/3.6;
+     var Faero=.5*rho*p.cda*vAir*vAir;
+-    var Fslope=p.totalMass*9.80665*(p.slope/100);
++    var Fslope=p.totalMass*9.80665*Math.sin(Math.atan(p.slope/100));
+     var gear=Math.max(1,Math.min(8,Number(e.gear)||defaultGear(e.start)));
+     var Facc,Fres;
+ 
+@@ -2082,12 +2085,14 @@
+   var support=false;
+   var prev=r.rows[r.peakIndex-1],next=r.rows[r.peakIndex+1];
+   function closeEnough(n){
+-    if(!n)return false;
++    if(!n||Math.abs(n.start-raw.start)!==10||n.gear!==raw.gear)return false;
++    var ni=r.rows.indexOf(n);
++    if((issues[ni]||[]).length)return false;
+     return Math.abs(n.ps-raw.ps)<=Math.max(20,raw.ps*.08)
+   }
+   if(closeEnough(prev)||closeEnough(next))support=true;
+ 
+-  if(!support&&r.rows.length===1) support=true;
++  // One interval cannot corroborate its own peak.
+ 
+   return {
+     confirmed:support,

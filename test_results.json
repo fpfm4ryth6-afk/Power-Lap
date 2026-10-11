@@ -1,0 +1,568 @@
+{
+  "passed": 48,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "source script syntax and recorded source hashes",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=800 v=40",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=800 v=100",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=800 v=190",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=800 v=390",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=1500 v=40",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=1500 v=100",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=1500 v=190",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=1500 v=390",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=3000 v=40",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=3000 v=100",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=3000 v=190",
+      "status": "pass"
+    },
+    {
+      "name": "kinetic-energy identity m=3000 v=390",
+      "status": "pass"
+    },
+    {
+      "name": "exact slope geometry -15%",
+      "status": "pass"
+    },
+    {
+      "name": "exact slope geometry -1%",
+      "status": "pass"
+    },
+    {
+      "name": "exact slope geometry 0%",
+      "status": "pass"
+    },
+    {
+      "name": "exact slope geometry 1%",
+      "status": "pass"
+    },
+    {
+      "name": "exact slope geometry 15%",
+      "status": "pass"
+    },
+    {
+      "name": "old reverse-wind clamp gives plausible output; patch rejects",
+      "status": "pass"
+    },
+    {
+      "name": "ordinary wind monotonic and unchanged flat-road regression",
+      "status": "pass"
+    },
+    {
+      "name": "DA reconstruction returns identical density at different temperatures",
+      "status": "pass"
+    },
+    {
+      "name": "corrected total does not relabel raw screenshot intervals",
+      "status": "pass"
+    },
+    {
+      "name": "v13 UI corrected-mode slope zeroing already exists",
+      "status": "pass"
+    },
+    {
+      "name": "single interval previously self-confirmed: fixed",
+      "status": "pass"
+    },
+    {
+      "name": "disjoint intervals previously confirmed each other: fixed",
+      "status": "pass"
+    },
+    {
+      "name": "different gears no longer corroborate peak",
+      "status": "pass"
+    },
+    {
+      "name": "contiguous clean same-gear support preserved",
+      "status": "pass"
+    },
+    {
+      "name": "zero, negative, NaN timing rejected",
+      "status": "pass"
+    },
+    {
+      "name": "nonfinite time and invalid speed are rejected by core",
+      "status": "pass"
+    },
+    {
+      "name": "strict number parser rejects suffix and Infinity",
+      "status": "pass"
+    },
+    {
+      "name": "actual input handler rejects malformed wind but permits blank",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity 2wd-manual",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity 2wd-dct",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity 2wd-other",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity awd-manual",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity awd-other",
+      "status": "pass"
+    },
+    {
+      "name": "model regression and mass sensitivity awd-dct",
+      "status": "pass"
+    },
+    {
+      "name": "shift delay lowers interval average, not engine power proof",
+      "status": "pass"
+    },
+    {
+      "name": "unequal interval means require time weighting",
+      "status": "pass"
+    },
+    {
+      "name": "midpoint approximation quantified at 40",
+      "status": "pass"
+    },
+    {
+      "name": "midpoint approximation quantified at 100",
+      "status": "pass"
+    },
+    {
+      "name": "midpoint approximation quantified at 190",
+      "status": "pass"
+    },
+    {
+      "name": "midpoint approximation quantified at 390",
+      "status": "pass"
+    },
+    {
+      "name": "research plausibility fb-2240128676190704-run-1",
+      "status": "pass"
+    },
+    {
+      "name": "research plausibility golf8-r1",
+      "status": "pass"
+    },
+    {
+      "name": "research plausibility golf8-r2",
+      "status": "pass"
+    },
+    {
+      "name": "research plausibility golf8-r3",
+      "status": "pass"
+    },
+    {
+      "name": "research plausibility corvette-c7-r1",
+      "status": "pass"
+    }
+  ],
+  "sensitivity": {
+    "2wd-manual": {
+      "baseline_ps": 458.83031731939286,
+      "plus_100kg_vehicle_ps": 21.275560492996362,
+      "gear4_to_6_ps": 0
+    },
+    "2wd-dct": {
+      "baseline_ps": 476.0144238714284,
+      "plus_100kg_vehicle_ps": 22.502996675284464,
+      "gear4_to_6_ps": 0
+    },
+    "2wd-other": {
+      "baseline_ps": 467.4223705954106,
+      "plus_100kg_vehicle_ps": 21.88927858414047,
+      "gear4_to_6_ps": 0
+    },
+    "awd-manual": {
+      "baseline_ps": 494.016821211656,
+      "plus_100kg_vehicle_ps": 21.68470588709232,
+      "gear4_to_6_ps": 0
+    },
+    "awd-other": {
+      "baseline_ps": 496.8808389703285,
+      "plus_100kg_vehicle_ps": 21.889278584140527,
+      "gear4_to_6_ps": 0
+    },
+    "awd-dct": {
+      "baseline_ps": 498.10774372989084,
+      "plus_100kg_vehicle_ps": 24.932643930269535,
+      "gear4_to_6_ps": -8.757627813401712
+    }
+  },
+  "aerodynamic_quadrature": [
+    {
+      "start": 40,
+      "midpoint_aero_ps": 1.1385617293089572,
+      "linear_speed_average_aero_ps": 1.1526180469547476,
+      "delta_ps": 0.014056317645789594
+    },
+    {
+      "start": 100,
+      "midpoint_aero_ps": 14.463950857517489,
+      "linear_speed_average_aero_ps": 14.496748932024298,
+      "delta_ps": 0.03279807450684238
+    },
+    {
+      "start": 190,
+      "midpoint_aero_ps": 92.6451896033992,
+      "linear_speed_average_aero_ps": 92.70610031319747,
+      "delta_ps": 0.060910709798421565
+    },
+    {
+      "start": 390,
+      "midpoint_aero_ps": 770.0347550847171,
+      "linear_speed_average_aero_ps": 770.1581383173843,
+      "delta_ps": 0.12338323266859753
+    }
+  ],
+  "research_scenarios": [
+    {
+      "vehicle": "Mercedes AMG GT S",
+      "run": "fb-2240128676190704-run-1",
+      "actual_vehicle_accuracy_validation": false,
+      "scenario": "1500kg total,1400kg vehicle,100kg driver,CdA=.7,1013.25hPa,15C,zero wind,2WD manual; recorded slope only",
+      "timing_status": "raw",
+      "old_peak_ps": 614.7167755771967,
+      "new_peak_ps": 614.7167571172969,
+      "delta_ps": -0.000018459899820300052,
+      "intervals": [
+        {
+          "start": 100,
+          "old_ps": 481.77010402822634,
+          "new_ps": 481.7700915231329
+        },
+        {
+          "start": 110,
+          "old_ps": 543.4810375196589,
+          "new_ps": 543.4810238236042
+        },
+        {
+          "start": 120,
+          "old_ps": 567.6401685364114,
+          "new_ps": 567.6401536493954
+        },
+        {
+          "start": 130,
+          "old_ps": 516.2457268879704,
+          "new_ps": 516.2457108099932
+        },
+        {
+          "start": 140,
+          "old_ps": 531.6904910808103,
+          "new_ps": 531.6904738118717
+        },
+        {
+          "start": 150,
+          "old_ps": 614.7167755771967,
+          "new_ps": 614.7167571172969
+        },
+        {
+          "start": 160,
+          "old_ps": 589.5561677188712,
+          "new_ps": 589.55614806801
+        },
+        {
+          "start": 170,
+          "old_ps": 552.8141062853252,
+          "new_ps": 552.8140854435027
+        },
+        {
+          "start": 180,
+          "old_ps": 565.7913777267999,
+          "new_ps": 565.7913556940161
+        },
+        {
+          "start": 190,
+          "old_ps": 592.6380175296625,
+          "new_ps": 592.6379943059176
+        }
+      ]
+    },
+    {
+      "vehicle": "VW Golf 8 GTI Facelift",
+      "run": "golf8-r1",
+      "actual_vehicle_accuracy_validation": false,
+      "scenario": "1500kg total,1400kg vehicle,100kg driver,CdA=.7,1013.25hPa,15C,zero wind,2WD manual; recorded slope only",
+      "timing_status": "raw",
+      "old_peak_ps": 286.412829072704,
+      "new_peak_ps": 286.4125476139971,
+      "delta_ps": -0.0002814587069224217,
+      "intervals": [
+        {
+          "start": 100,
+          "old_ps": 262.1610356690758,
+          "new_ps": 262.16085655898956
+        },
+        {
+          "start": 110,
+          "old_ps": 263.5903466476314,
+          "new_ps": 263.5901504794418
+        },
+        {
+          "start": 120,
+          "old_ps": 267.10125569326254,
+          "new_ps": 267.10104246696943
+        },
+        {
+          "start": 130,
+          "old_ps": 245.15535933112008,
+          "new_ps": 245.15512904672357
+        },
+        {
+          "start": 140,
+          "old_ps": 247.22115300739807,
+          "new_ps": 247.2209056648981
+        },
+        {
+          "start": 150,
+          "old_ps": 251.029831185219,
+          "new_ps": 251.02956678461558
+        },
+        {
+          "start": 160,
+          "old_ps": 286.412829072704,
+          "new_ps": 286.4125476139971
+        },
+        {
+          "start": 170,
+          "old_ps": 283.31256259292877,
+          "new_ps": 283.3122640761185
+        },
+        {
+          "start": 180,
+          "old_ps": 284.257399615888,
+          "new_ps": 284.2570840409743
+        },
+        {
+          "start": 190,
+          "old_ps": 279.1199229105075,
+          "new_ps": 279.1195902774903
+        }
+      ]
+    },
+    {
+      "vehicle": "VW Golf 8 GTI Facelift",
+      "run": "golf8-r2",
+      "actual_vehicle_accuracy_validation": false,
+      "scenario": "1500kg total,1400kg vehicle,100kg driver,CdA=.7,1013.25hPa,15C,zero wind,2WD manual; recorded slope only",
+      "timing_status": "raw",
+      "old_peak_ps": 334.0071281086313,
+      "new_peak_ps": 334.00751533634565,
+      "delta_ps": 0.0003872277143273095,
+      "intervals": [
+        {
+          "start": 100,
+          "old_ps": 290.7533406412458,
+          "new_ps": 290.7535604191377
+        },
+        {
+          "start": 110,
+          "old_ps": 305.8201448313192,
+          "new_ps": 305.82038554043896
+        },
+        {
+          "start": 120,
+          "old_ps": 303.8299789476678,
+          "new_ps": 303.83024058801533
+        },
+        {
+          "start": 130,
+          "old_ps": 277.42894741779895,
+          "new_ps": 277.4292299893742
+        },
+        {
+          "start": 140,
+          "old_ps": 266.94586116015563,
+          "new_ps": 266.9461646629587
+        },
+        {
+          "start": 150,
+          "old_ps": 322.39258577214304,
+          "new_ps": 322.39291020617395
+        },
+        {
+          "start": 160,
+          "old_ps": 330.9424597496664,
+          "new_ps": 330.9428051149251
+        },
+        {
+          "start": 170,
+          "old_ps": 331.45272504433046,
+          "new_ps": 331.45309134081697
+        },
+        {
+          "start": 180,
+          "old_ps": 334.0071281086313,
+          "new_ps": 334.00751533634565
+        },
+        {
+          "start": 190,
+          "old_ps": 321.26472163484766,
+          "new_ps": 321.26512979378975
+        }
+      ]
+    },
+    {
+      "vehicle": "VW Golf 8 GTI Facelift",
+      "run": "golf8-r3",
+      "actual_vehicle_accuracy_validation": false,
+      "scenario": "1500kg total,1400kg vehicle,100kg driver,CdA=.7,1013.25hPa,15C,zero wind,2WD manual; recorded slope only",
+      "timing_status": "raw",
+      "old_peak_ps": 331.64963884420376,
+      "new_peak_ps": 331.6496563134361,
+      "delta_ps": 0.000017469232318489958,
+      "intervals": [
+        {
+          "start": 100,
+          "old_ps": 273.1102441152087,
+          "new_ps": 273.11025459674806
+        },
+        {
+          "start": 110,
+          "old_ps": 309.5257003868748,
+          "new_ps": 309.525711866656
+        },
+        {
+          "start": 120,
+          "old_ps": 301.6367764915738,
+          "new_ps": 301.6367889695969
+        },
+        {
+          "start": 130,
+          "old_ps": 273.3031011176192,
+          "new_ps": 273.3031145938841
+        },
+        {
+          "start": 140,
+          "old_ps": 294.3263522603779,
+          "new_ps": 294.3263667348847
+        },
+        {
+          "start": 150,
+          "old_ps": 313.8650007480545,
+          "new_ps": 313.8650162208031
+        },
+        {
+          "start": 160,
+          "old_ps": 325.79999469042014,
+          "new_ps": 325.80001116141057
+        },
+        {
+          "start": 170,
+          "old_ps": 331.64963884420376,
+          "new_ps": 331.6496563134361
+        },
+        {
+          "start": 180,
+          "old_ps": 321.1282044844035,
+          "new_ps": 321.12822295187766
+        },
+        {
+          "start": 190,
+          "old_ps": 313.78193216083645,
+          "new_ps": 313.7819516265524
+        }
+      ]
+    },
+    {
+      "vehicle": "Corvette C7 Z06 Carbon65",
+      "run": "corvette-c7-r1",
+      "actual_vehicle_accuracy_validation": false,
+      "scenario": "1500kg total,1400kg vehicle,100kg driver,CdA=.7,1013.25hPa,15C,zero wind,2WD manual; recorded slope only",
+      "timing_status": "unknown",
+      "old_peak_ps": 538.6135235919525,
+      "new_peak_ps": 538.613595847376,
+      "delta_ps": 0.0000722554235608186,
+      "intervals": [
+        {
+          "start": 100,
+          "old_ps": 426.75324872413665,
+          "new_ps": 426.7532897339717
+        },
+        {
+          "start": 110,
+          "old_ps": 427.02220499671927,
+          "new_ps": 427.0222499122529
+        },
+        {
+          "start": 120,
+          "old_ps": 515.2239219445187,
+          "new_ps": 515.2239707657509
+        },
+        {
+          "start": 130,
+          "old_ps": 509.7207268879704,
+          "new_ps": 509.7207796149011
+        },
+        {
+          "start": 140,
+          "old_ps": 507.8234785495885,
+          "new_ps": 507.8235351822179
+        },
+        {
+          "start": 150,
+          "old_ps": 508.94767992774865,
+          "new_ps": 508.94774046607654
+        },
+        {
+          "start": 160,
+          "old_ps": 512.7149165299103,
+          "new_ps": 512.7149809739367
+        },
+        {
+          "start": 170,
+          "old_ps": 524.9665820692277,
+          "new_ps": 524.9666504189526
+        },
+        {
+          "start": 180,
+          "old_ps": 538.6135235919525,
+          "new_ps": 538.613595847376
+        },
+        {
+          "start": 190,
+          "old_ps": 477.156186311299,
+          "new_ps": 477.156262472421
+        }
+      ]
+    }
+  ]
+}

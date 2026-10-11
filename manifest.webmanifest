@@ -1,0 +1,10 @@
+{
+  "name": "GPS Power Lab",
+  "short_name": "Power Lab",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07111d",
+  "theme_color": "#07111d",
+  "description": "GPS-basierte Leistungsanalyse aus Beschleunigungsintervallen"
+}

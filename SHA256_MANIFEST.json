@@ -1,0 +1,15 @@
+{
+  "LIESMICH.md": "4eb8602f92036e4775cfe44821f72777805f22c7e54c0deb1c5cad51633c8045",
+  "index.html": "7acf3c59ad958cc9995b4af7af10a2492aba831b87926d1815c85c7da5f17694",
+  "manifest.webmanifest": "f0f9c50c4455dfaaffc9556fa2c19ac6e027936c34e15cb282135f197853a10f",
+  "sw.js": "63646fb1552e708e5fa02a4c61575dcc78dade62c6a33ff422705b53536d1d10",
+  "tests/baseline.html": "2194cc94524677139cb08025af4f5a0b26025be998d7fb2b5197a4fd82edc525",
+  "tests/browser_results.json": "06ce6875639a326f3eadae30e4ebca968142b4148106aa4782125000e62b5784",
+  "tests/candidate.html": "7acf3c59ad958cc9995b4af7af10a2492aba831b87926d1815c85c7da5f17694",
+  "tests/provenance.json": "7c778396cc26ac3a0a3b4382e13eaa3989251d8c20d858af1e0a147f9727931d",
+  "tests/research_fixtures.json": "4c802842459f11c247fbf1c2c902ddf3807217c3b46404721dcb7d4495612450",
+  "tests/test_browser.cjs": "26f473b7a485d90c993e9fd94368d7de64a075c04a3aa543bb636adf44324f13",
+  "tests/test_core.cjs": "1428dc811c97e7f6683fa9628b65ec4b5b039e387e58de4169c3bcdd55331c0f",
+  "tests/test_results.json": "7f5772054102d656aba7edf8e114295b6ac49d37358e3693984ef73c9f4f1aee",
+  "tests/v13_to_v13_1.patch": "6c87c330ce02896c734f3ca736fb5e171b3b3e3ec8eca9fc1649b1ee709c0623"
+}
