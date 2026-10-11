@@ -1,0 +1,10 @@
+{
+  "baseline_sha256": "2194cc94524677139cb08025af4f5a0b26025be998d7fb2b5197a4fd82edc525",
+  "candidate_sha256": "7acf3c59ad958cc9995b4af7af10a2492aba831b87926d1815c85c7da5f17694",
+  "source_library_id": "libfile_e5838fdf23788191968bf8fb85b5d256",
+  "zip_index_identical": true,
+  "live_version_verified": false,
+  "deployment": false,
+  "loss_parameters_changed": false,
+  "version": "v13.1 E03"
+}
